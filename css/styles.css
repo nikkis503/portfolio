@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #161616;
     background-color: #F8F9FA;
@@ -616,6 +616,92 @@ footer {
     background-color: #fff;
     color: #000080;
     border-color: #000080;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 200px;
+    width: 4px;
+    height: 100%;
+    background-color: #000080;
+    top: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline-date {
+    width: 180px;
+    font-weight: bold;
+    color: #000080;
+    font-size: 1.1rem;
+    text-align: right;
+    padding-right: 20px;
+    flex-shrink: 0;
+}
+
+.timeline-marker {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #000080;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 0 4px #000080;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.timeline-content .experience-item {
+    margin-bottom: 0;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-date {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 60px;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-marker {
+        position: absolute;
+        left: 10px;
+        top: 5px;
+    }
+
+    .timeline-content {
+        padding-left: 60px;
+    }
 }
 
 /* Responsive Design */
