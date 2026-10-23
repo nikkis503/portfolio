@@ -49,3 +49,5 @@
 .projects-gallery-page .talks ul{list-style:none;padding:0;margin:8px 0 0;font-size:15px;line-height:1.5;color:#6b7280}
 @media(max-width:1099px){.projects-gallery-page .delivery-gallery>article{flex-basis:calc((100% - 24px)/2)}}
 @media(max-width:599px){.projects-gallery-page .delivery-gallery{gap:32px 12px}.projects-gallery-page .delivery-gallery>article{flex-basis:calc((100% - 12px)/2)}.projects-gallery-page .talks ul{font-size:14px;line-height:20px}}
+/* Give the Sharing introduction room without orphaning its last word. */
+.projects-gallery-page .speaking .section-intro>p{width:100%;max-width:80ch;text-wrap:pretty}
