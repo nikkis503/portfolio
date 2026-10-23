@@ -6,3 +6,6 @@
 .case-detail-page .harness-story .approved-narrative{max-width:none}
 @media(max-width:1050px){.case-detail-page .shell{width:calc(100% - 96px)}}
 @media(max-width:799px){.case-detail-page .shell{width:calc(100% - 48px)}}
+/* Phone frames/poster crops intentionally exceed their clipped viewport. */
+.case-detail-page .case-artifacts .phone .frame-crop img,
+.case-detail-page .case-artifacts .phone .poster-crop img{max-width:none}
