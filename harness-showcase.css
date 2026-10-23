@@ -1,2 +1,4 @@
 .harness-animation iframe{display:block;width:100%;height:auto;aspect-ratio:16/10;min-height:320px;border:0;background:#fafaf9}.harness-animation figcaption{text-align:center}.harness-animation figcaption a{color:inherit;text-underline-offset:3px}
 .harness-dashboard{margin-top:32px}.harness-dashboard img{display:block;width:100%;height:auto;object-fit:contain}.harness-dashboard figcaption{text-align:center}
+
+.harness-story{display:grid;grid-template-columns:minmax(0,0.8fr) minmax(0,1.2fr);gap:48px;align-items:start;margin:48px 0 64px}.harness-story .harness-dashboard{margin:0;position:sticky;top:32px}.harness-story .approved-narrative{margin:0;max-width:none}.harness-story .harness-dashboard img{width:100%;height:auto}.harness-story .harness-dashboard figcaption{font-size:14px}@media(max-width:799px){.harness-story{grid-template-columns:1fr;gap:28px;margin:32px 0 48px}.harness-story .harness-dashboard{position:static;max-width:500px;width:100%;margin:0 auto}}

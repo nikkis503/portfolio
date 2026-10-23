@@ -1,0 +1,8 @@
+/* Detail-only reading width: leave Home and Projects untouched. */
+.case-detail-page .shell{width:calc(100% - 128px);max-width:1160px;margin-inline:auto}
+.case-detail-page .opening>*,.case-detail-page .metadata>*,.case-detail-page .harness-story>*{min-width:0}
+.case-detail-page main img,.case-detail-page main iframe,.case-detail-page main figure{max-width:100%}
+.case-detail-page .approved-narrative{max-width:680px}
+.case-detail-page .harness-story .approved-narrative{max-width:none}
+@media(max-width:1050px){.case-detail-page .shell{width:calc(100% - 96px)}}
+@media(max-width:799px){.case-detail-page .shell{width:calc(100% - 48px)}}
