@@ -1,3 +1,5 @@
 /* A fourth navigation link remains usable on narrow screens. */
 .header nav{flex-wrap:wrap}.header nav a[aria-current="page"]{color:#111;text-decoration:underline;text-underline-offset:5px}
 @media(max-width:599px){.header{flex-wrap:wrap;padding-block:14px;gap:4px}.header nav{width:100%;justify-content:space-between;gap:8px}.header nav a{min-height:44px}}
+
+.legacy-navigation{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 12px}.legacy-navigation a{display:inline-flex;align-items:center;min-height:44px}@media(max-width:599px){.legacy-navigation{padding:8px 16px;gap:2px 8px}}
